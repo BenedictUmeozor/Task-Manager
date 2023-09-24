@@ -3,7 +3,7 @@ import { FaceSmileIcon } from "@heroicons/react/24/solid";
 
 export default function IntroForm() {
   return (
-    <div className="h-screen grid place-items-center">
+    <div className="h-full flex items-center justify-center">
       <div className="element py-4 px-3 rounded shadow w-5/6 max-w-md">
         <Form method="post">
           <label htmlFor="username" className="flex-center mb-3">

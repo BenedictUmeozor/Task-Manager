@@ -22,5 +22,5 @@ export default function Dashboard() {
   const { username } = useStateContext();
   dispatch = useStateDispatchContext();
 
-  return <div>{username ? <TaskBody /> : <IntroForm />}</div>;
+  return <div className="h-full">{username ? <TaskBody /> : <IntroForm />}</div>;
 }

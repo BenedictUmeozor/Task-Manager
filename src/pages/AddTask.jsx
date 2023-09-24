@@ -25,7 +25,7 @@ export default function AddTask() {
   dispatch = useStateDispatchContext();
 
   return (
-    <>
+    <div className="h-full">
       <header className="py-4">
         <h2 className="text-center font-semibold text-2xl">Add New Task</h2>
       </header>
@@ -73,6 +73,6 @@ export default function AddTask() {
           </Form>
         </div>
       </section>
-    </>
+    </div>
   );
 }

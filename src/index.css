@@ -21,7 +21,7 @@ html {
 @tailwind utilities;
 
 .center {
-  @apply max-w-6xl mx-auto px-2;
+  @apply max-w-6xl mx-auto px-2 h-full;
 }
 
 .apply-hover {
@@ -60,6 +60,13 @@ html {
 
 #tasklist button.active {
   color: #f56565;
+}
+
+.app {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 @keyframes resize {
