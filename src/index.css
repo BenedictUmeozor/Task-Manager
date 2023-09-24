@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 300px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.center {
+  @apply max-w-6xl mx-auto px-2;
+}
+
+.apply-hover {
+  @apply transition-all duration-200 ease-in-out;
+}
+
+.element {
+  @apply bg-lightModeElement dark:bg-darkModeElement;
+}
+
+.theme {
+  @apply bg-lightModeBg dark:bg-darkModeBg;
+}
+
+.theme-text {
+  @apply text-lightModeText dark:text-darkModeText;
+}
+
+.flex-between {
+  @apply flex items-center justify-between;
+}
+
+.flex-center {
+  @apply flex items-center gap-2;
+}
+
+.input {
+  @apply block appearance-none h-12 w-full px-2 rounded border text-black dark:text-white text-base border-gray-400 bg-gray-100 dark:bg-zinc-800 focus:outline-none;
+}
+
+.theme-switcher {
+  transform: scale(1);
+  transform-origin: top right;
+  animation: resize 0.2s ease-in-out 1;
+}
+
+#tasklist button.active {
+  color: #f56565;
+}
+
+@keyframes resize {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
